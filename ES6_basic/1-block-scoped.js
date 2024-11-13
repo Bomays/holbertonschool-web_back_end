@@ -3,8 +3,8 @@ export default function taskBlock(trueOrFalse) {
   let task2 = true;
 
   if (trueOrFalse) {
-    task = true;
-    task2 = false;
+    const notoverwrittenTask = true;
+    const notoverwrittenTask2 = false;
   }
 
   return [task, task2];
