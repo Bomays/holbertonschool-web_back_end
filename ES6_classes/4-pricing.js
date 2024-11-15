@@ -16,7 +16,7 @@ export default class Pricing {
     if (typeof value === 'number') {
       this._amount = value;
     } else {
-      throw new TypeError('Amount must be a string');
+      throw new TypeError('Amount must be a number');
     }
   }
 
