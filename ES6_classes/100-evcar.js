@@ -13,6 +13,6 @@ export default class EVCar extends Car {
 
     // new cloneCar with range added
     cloneCar() {
-        return new EVCar(this._brand, this._motor, this._color, this._range);
+        return new Car(this._brand, this._motor, this._color, this._range);
     }
 }
