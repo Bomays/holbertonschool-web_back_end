@@ -4,35 +4,35 @@ export default class Currency {
     this._name = name;
   }
 
-  //getter code
+  // getter code
   get code() {
     return this._code;
   }
 
-  //setter code
+  // setter code
   set code(value) {
-    if (typeof value === "string") {
+    if (typeof value === 'string') {
       this._code = value;
     } else {
-      throw new TypeError("Code must be a string");
+      throw new TypeError('Code must be a string');
     }
   }
 
-  //getter name
+  // getter name
   get name() {
     return this._name;
   }
 
-  //setter name
+  // setter name
   set name(value) {
-    if (typeof value === "string") {
+    if (typeof value === 'string') {
       this._name = value;
     } else {
-      throw new TypeError("Name must be a string");
+      throw new TypeError('Name must be a string');
     }
   }
 
-  //displayFullCurrency method
+  // displayFullCurrency method
   displayFullCurrency() {
     return `${this._name} (${this._code})`;
   }
