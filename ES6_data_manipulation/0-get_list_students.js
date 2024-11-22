@@ -1,4 +1,4 @@
-export default function functiongetListStudents() {
+export default function getListStudents() {
   const id = 1;
   const firstName = 'Guillaume';
   const location = 'San Francisco';
