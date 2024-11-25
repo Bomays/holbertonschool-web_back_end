@@ -1,4 +1,4 @@
-# holbertonschool-web_back_end: ES6 data manipulation
+# holbertonschool-web_back_end: ES6 Promises
 
 
 <img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/05a7c29e538d625d9eca9b52975f54addee77a70/holbertonschool-web_front_end/images/JS.png" alt="JS"/>
@@ -7,9 +7,14 @@
 ## Objectives
 
 ```
-    - How to use map, filter and reduce on arrays
-    - Typed arrays
-    - The Set, Map, and Weak link data structures
+    
+    - Promises (how, why, and what)
+    - How to use the then, resolve, catch methods
+    - How to use every method of the Promise object
+    - Throw / Try
+    - The await operator
+    - How to use an async function
+
 
 ```
 
@@ -27,4 +32,28 @@
     - Your code needs to pass all the tests and lint. You can verify    the entire project running npm run full-test
     - All of your functions must be exported
 
+```
+
+### File added (cf Repository Readme)
+
+> utils.js
+
+#### Response Data Format
+
+'uploadPhoto' returns a response with the format
+
+```
+{
+  status: 200,
+  body: 'photo-profile-1',
+}
+```
+
+'createUser' returns a response with the format
+
+```
+{
+  firstName: 'Guillaume',
+  lastName: 'Salva',
+}
 ```
