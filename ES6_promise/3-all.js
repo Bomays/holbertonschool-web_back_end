@@ -8,7 +8,7 @@ export default function handleProfileSignup() {
     .catch(() => console.log('Signup system offline'));
 }
 
-/* vscode proposing :
+/* vscode async func proposal:
 
 import { uploadPhoto, createUser } from './utils';
 
