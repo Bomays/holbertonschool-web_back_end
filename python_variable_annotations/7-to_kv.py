@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
-"""Module that make the sum of a list of floats and integers """
+"""Module that returns a string and a square of an int or a float  """
 
 
-def to_kv(k: str, v: int | float) -> tuple[str, float]:
-    """Function that returns the sum of floats and integers as a float"""
+from typing import Union
+
+
+def to_kv(k: str, v: Union[int, float]) -> tuple[str, float]:
+    """Function that returns a string and a square of an int or a float"""
     return (k, v**2)
