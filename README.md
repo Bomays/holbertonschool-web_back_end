@@ -1,7 +1,7 @@
 # holbertonschool-web_back_end: ES6 learning courses
 
 <p align="center">
-<img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/05a7c29e538d625d9eca9b52975f54addee77a70/holbertonschool-web_front_end/images/JS.png" alt="JS"/>
+<img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/05a7c29e538d625d9eca9b52975f54addee77a70/holbertonschool-web_front_end/images/JS.png" alt="JS" width="90"/>
 
 
 ## Requirements
@@ -53,10 +53,15 @@ babel.config.js
 .eslintrc.js
 
 > Don’t forget to run $ npm install when you have the package.json
+<pre>
 
+
+
+
+</pre>
 
 <p align="center">
-<img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/9441bc9f0855463ba8b62e4f2bc7e68090566757/images/python-logo-only.png" alt="Python"/>
+<img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/9441bc9f0855463ba8b62e4f2bc7e68090566757/images/python-logo-only.png" alt="Python" width="72"/>
 </p>
 
 
