@@ -1,10 +1,7 @@
 # holbertonschool-web_back_end: ES6 learning courses
 
 <p align="center">
-<img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/05a7c29e538d625d9eca9b52975f54addee77a70/holbertonschool-web_front_end/images/JS.png" alt="JS" width="250"/>
-<p align="center">
-<img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/9441bc9f0855463ba8b62e4f2bc7e68090566757/images/python-logo.png" alt="Python" width="130"/>
-</p>
+<img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/05a7c29e538d625d9eca9b52975f54addee77a70/holbertonschool-web_front_end/images/JS.png" alt="JS"/>
 
 
 ## Requirements
@@ -58,7 +55,42 @@ babel.config.js
 > Don’t forget to run $ npm install when you have the package.json
 
 
-## Setup Python part
+<p align="center">
+<img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/9441bc9f0855463ba8b62e4f2bc7e68090566757/images/python-logo-only.png" alt="Python"/>
+</p>
+
+
+## Requirements
+
+```
+
+    - A README.md file, at the root of the folder of the project
+      is mandatory
+    - Allowed editors: vi, vim, emacs
+    - All your files will be interpreted/compiled on Ubuntu 20.04
+      LTS using python3 (version 3.9)
+    - All your files should end with a new line
+    - All your files must be executable
+    - The length of your files will be tested using wc
+    - The first line of all your files should be exactly
+      #!/usr/bin/env python3
+
+    - Your code should use the pycodestyle style (version 2.5.x)
+    - All your functions and coroutines must be type-annotated.
+    - All your modules should have a documentation
+      (python3 -c 'print(__import__("my_module").__doc__)')
+
+    - All your functions should have a documentation
+      (python3 -c 'print(__import__("my_module").my_function.__doc__)')
+
+    - A documentation is not a simple word, it’s a real sentence
+      explaining what’s the purpose of the module, class or method
+      (the length of it will be verified)
+
+
+```
+
+## Setup 
 
 ```
 > mypy
