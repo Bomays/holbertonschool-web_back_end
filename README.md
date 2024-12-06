@@ -59,7 +59,7 @@ babel.config.js
 <br>
 <br>
 <p align="center">
-<img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/9441bc9f0855463ba8b62e4f2bc7e68090566757/images/python-logo-only.png" alt="Python" width="200"/>
+<img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/9441bc9f0855463ba8b62e4f2bc7e68090566757/images/python-logo-only.png" alt="Python" width="150"/>
 </p>
 
 
