@@ -18,7 +18,7 @@
     - Your code should use the js extension
     - Your code will be tested using Jest and the command npm run test
     - Your code will be verified against lint using ESLint
-    - Your code needs to pass all the tests and lint. You can verify    the entire project running npm run full-test
+    - Your code needs to pass all the tests and lint. You can verify the entire project running npm run full-test
     - All of your functions must be exported
 
 ```
@@ -49,10 +49,43 @@ Install Babel using: npm install --save-dev babel-jest @babel/core @babel/preset
 Install ESLint using: npm install --save-dev eslint
 ```
 
-## Files
+### Files
 
 package.json
 babel.config.js
 .eslintrc.js
 
 > Don’t forget to run $ npm install when you have the package.json
+
+
+## Setup Python part
+
+```
+> mypy
+
+usage : 
+    mypy your_file.py or mypy --strict your_file.py (with type annotations)
+
+```
+
+```
+> wc
+
+usage :
+    wc filename: This displays the number of lines, words, and bytes in the file.
+    Count only lines: wc -l filename
+    Count only words: wc -w filename
+    Count only characters: wc -m filename
+    Count only bytes: wc -c filename
+    Find the longest line length: wc -L filename
+
+```
+
+```
+> pycodestyle
+
+usage :
+    pycodestyle your_file.py
+    pycodestyle --show-source your_file.py : show source code for each error
+
+```
