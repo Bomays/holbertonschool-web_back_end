@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Module async Generator that handles a runtime coroutine
-with an async comprehesion
+with an async comprehension
 """
 
 import asyncio
@@ -18,7 +18,7 @@ async def measure_runtime(n: int = 4) -> float:
     the total execution time
     """
     start_time = time.time()
-    coroutines = [async_comprehension() for i in range(4)]
+    coroutines = [async_comprehension() for i in range(n)]
     await asyncio.gather(*coroutines)
     end_time = time.time()
     total_time = end_time - start_time
