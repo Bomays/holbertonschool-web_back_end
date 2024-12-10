@@ -71,10 +71,15 @@ class Server:
         key/value pairs
         """
         # defining all the value si need for my dict returned
-        data = self.get_page()  # use get_page() to retrieve specific data
+        data = self.get_page(page, page_size)  # use get_page() to retrieve specific data
         page_size = len(data)  # length of the data i retrieved
         total_data = len(self.dataset())  # total length of my dataset
-        total_pages = (total_data + page_size - 1) // page_size
+
+        if page_size == 0:
+            total_pages = 0
+        else:
+            total_pages = (total_data + page_size - 1) // page_size
+
         next_page = page + 1 if page < total_pages else None
         prev_page = page - 1 if page > 1 else None
 
