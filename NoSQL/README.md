@@ -3,13 +3,11 @@
 $~$
 
 <p align="center">
-<img src="https://github.com/Bomays/holbertonschool-web_back_end/blob/4e8a3778e6abe2ff03fe130d8990903b4ed589c6/NoSQL/images/MongoDB_ForestGreen.png" alt="MongoDB/noSQL" width="600"/>
-</p>
-$~$
-<p align="center">
 <img src="https://github.com/Bomays/holbertonschool-higher_level_programming/blob/9441bc9f0855463ba8b62e4f2bc7e68090566757/images/python-logo-only.png" alt="MongoDB/noSQL" width="100"/>
 </p>
-
+<p align="center">
+<img src="https://github.com/Bomays/holbertonschool-web_back_end/blob/4e8a3778e6abe2ff03fe130d8990903b4ed589c6/NoSQL/images/MongoDB_ForestGreen.png" alt="MongoDB/noSQL" width="600"/>
+</p>
 
 
 $~$
