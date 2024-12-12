@@ -1,0 +1,2 @@
+// Mongosh command to list all databases
+show dbs
