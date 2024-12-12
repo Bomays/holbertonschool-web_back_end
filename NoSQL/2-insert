@@ -1,0 +1,2 @@
+// Mongosh command to add a document in school collection
+db.school.insertOne ({"name":"Holberton school"})
