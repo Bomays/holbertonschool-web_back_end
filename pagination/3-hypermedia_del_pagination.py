@@ -75,14 +75,13 @@ class Server:
 
         next_index: Optional[int] = current_index
 
-        while next_index is not None and next_index < len(index_dataset):
-            if index_dataset.get(next_index) is not None:
-                break
+        while next_index < len(index_dataset) and \
+            index_dataset.get(next_index) is None:
 
             next_index += 1
 
-            if next_index is not None and next_index >= len(index_dataset):
-                next_index = None
+        if next_index >= len(index_dataset):
+            next_index = None
 
         return {
             "index": index,
