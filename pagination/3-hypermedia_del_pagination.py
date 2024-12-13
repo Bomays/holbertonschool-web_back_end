@@ -4,8 +4,7 @@ Deletion-resilient hypermedia pagination
 """
 
 import csv
-from typing import Dict, List, Optional
-import math
+from typing import Dict, List, Optional, Union
 
 
 class Server:
@@ -60,8 +59,7 @@ class Server:
 
         index_dataset = self.indexed_dataset()
 
-        assert isinstance(index, int) and 0 <= index < len(index_dataset),\
-            "index must be in in the indexed dataset range"
+        assert isinstance(index, int) and 0 <= index < len(index_dataset)
 
         data: list[list[str]] = []
         current_index = index
