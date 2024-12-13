@@ -48,16 +48,14 @@ class Server:
             List[] : a list of rows for the searched page or an empty list if
             idexes are out of range of the dataset
         """
-        assert isinstance(page, int) and page > 0,\
-            "page must be an integer greater than 0"
-        assert isinstance(page_size, int) and page_size > 0,\
-            "page_size must be an integer greater than 0"
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
 
         dataset = self.dataset()  # my csv file
 
         try:
             start, end = index_range(page, page_size)
             return dataset[start:end]
-            # slicing method to get a new list of what we only need
+
         except IndexError:
             return []
