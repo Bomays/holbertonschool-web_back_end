@@ -1,7 +1,9 @@
-holby@ubuntu:~/$ 
+
+Downloading the dump.zip archive
 >curl -o dump.zip -s "https://s3.eu-west-3.amazonaws.com/hbtn.intranet.project.files/holbertonschool-webstack/411/dump.zip"
-holby@ubuntu:~/$ 
-holby@ubuntu:~/$ 
+
+$~$
+Extracting the archive
 > unzip dump.zip
 ```
 Archive:  dump.zip
@@ -9,9 +11,9 @@ Archive:  dump.zip
    creating: dump/logs/
   inflating: dump/logs/nginx.metadata.json  
   inflating: dump/logs/nginx.bson 
-```   
-holby@ubuntu:~/$ 
-holby@ubuntu:~/$ 
+``` 
+$~$
+Restoring the database
 > mongorestore dump
 
 ```
@@ -32,8 +34,9 @@ holby@ubuntu:~/$
 2018-02-23T20:13:06.231+0000    finished restoring logs.nginx (94778 documents)
 2018-02-23T20:13:06.232+0000    done
 ```
-holby@ubuntu:~/$ 
-holby@ubuntu:~/$ 
+$~$
+
+Running Python script
 > ./12-log_stats.py 
  ```
 94778 logs
@@ -45,4 +48,3 @@ Methods:
     method DELETE: 0
 47415 status check
 ```
-holby@ubuntu:~/$ 
