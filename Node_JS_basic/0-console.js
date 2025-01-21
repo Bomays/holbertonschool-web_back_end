@@ -1,6 +1,6 @@
-// function to display message
-function displayMessage(str) {
+// arrow function to display message
+const displayMessage = (str) =>{
     console.log(str);
-}
+};
 
 module.exports = displayMessage;
