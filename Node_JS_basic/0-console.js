@@ -1,5 +1,5 @@
 // arrow function to display message
-const displayMessage = (str) =>{
+const displayMessage = (str) => {
     console.log(str);
 };
 
