@@ -2,14 +2,15 @@
 
 console.log("Welcome to Holberton School, what is your name?");
 
-console.on("readable", function() {
-  const name = console.read();
+process.stdin.on("readable", function () {
+  const name = process.stdin.read()?.toString();
 
-  if (name !== null) {
-    console.log(`Your name is: ${name}`);
+  if (name !== null && name !== undefined) {
+    console.log(`Your name is: ${name.toString().trim()}`);
+    //trim to ensure removing newline
   }
 });
 
-process.stdin.on("end", function() {
+process.stdin.on("end", function () {
   console.log("This important software is now closing");
 });
