@@ -27,6 +27,9 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],
+    'indent': ['error', 2],
+    'no-tabs': 'error',
+    'no-mixed-spaces-and-tabs': 'error'
   },
   overrides:[
     {
