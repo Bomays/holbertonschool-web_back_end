@@ -1,8 +1,7 @@
 // Script to create a simple HTTP server
+const http = require('http');
 
-import { createServer } from 'http';
-
-const app = createServer((req, res) => {
+const app = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   res.end('Hello Holberton School!');
@@ -10,4 +9,4 @@ const app = createServer((req, res) => {
 
 app.listen(1245);
 
-export default app;
+module.exports = app;
