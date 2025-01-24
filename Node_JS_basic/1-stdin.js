@@ -3,10 +3,10 @@
 console.log("Welcome to Holberton School, what is your name?");
 
 process.stdin.on("readable", function () {
-  const name = process.stdin.read().toString();
+  const name = process.stdin.read();
 
-  if (name !== null && name !== undefined) {
-    console.log(`Your name is: ${name.trim()}`);
+  if (name !== null) {
+    console.log(`Your name is: ${name.toString().trim()}`);
     //trim to ensure removing newline
   }
 });
