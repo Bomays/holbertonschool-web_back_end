@@ -1,17 +1,17 @@
 // Script that reads a file and prints the number of students and their names by field
 
-import fs from 'fs'; // filesystem node module
+const fs = requires ('fs'); // filesystem node module
 
 function countStudents(path) {
   try {
     const data = fs.readFileSync(path, 'utf8');
     const lines = data.split('\n').filter((line) => line.trim() !== '');
     if (lines.length <= 1) {
-      console.error('No students found');
+      console.error('Cannot load the database');
       return;
     }
 
-    const students = lines.slice(1);
+    const students = lines.slice(1).filter((line) => line.trim() !== '');
 
     const fields = {};
     students.forEach((line) => {
