@@ -1,6 +1,6 @@
 // Script to create a simple HTTP server
 
-import { createServer } from 'http';
+const http = require('http');
 
 const app = createServer((_req, res) => {
   res.statusCode = 200;
@@ -10,4 +10,4 @@ const app = createServer((_req, res) => {
 
 app.listen(1245);
 
-export default app;
+module.export = app;
