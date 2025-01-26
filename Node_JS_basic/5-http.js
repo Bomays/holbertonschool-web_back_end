@@ -26,11 +26,12 @@ const app = http.createServer((req, res) => {
         for (const field in fields) {
           if (Object.prototype.hasOwnProperty.call(fields, field)) {
             totalStudents += fields[field].length;
-            output += `Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}\n`;
+            output += `Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`;
+            output += '\n';
           }
         }
 
-        output = `Number of students: ${totalStudents}\n` + output;
+        output += `Number of students: ${totalStudents}\n`;
         res.end(output);
       })
       .catch((err) => {
