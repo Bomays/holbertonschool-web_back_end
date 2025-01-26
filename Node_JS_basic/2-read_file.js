@@ -4,7 +4,7 @@ const fs = require('fs'); // filesystem
 
 function countStudents(path) {
   try {
-    const data = fs.readFile(path, 'utf8');
+    const data = fs.readFileSync(path, 'utf8');
     const students = data.split('\n').filter((line) => line.trim() !== '');
 
     const fields = {};
