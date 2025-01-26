@@ -21,17 +21,13 @@ const app = http.createServer((req, res) => {
     countStudents(database) // call async func
       .then((fields) => {
         let output = message;
-        let totalStudents = 0;
-
-        for (const field in fields) {
-          if (Object.prototype.hasOwnProperty.call(fields, field)) {
-            totalStudents += fields[field].length;
-            output += `Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`;
-            output += '\n';
-          }
-        }
-
+        const totalStudents = Object.values(fields).flat().length;
         output += `Number of students: ${totalStudents}\n`;
+
+        Object.keys(fields).forEach((field) => {
+          output += `Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}\n`;
+        });
+
         res.end(output);
       })
       .catch((err) => {
